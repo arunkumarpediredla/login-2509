@@ -1,0 +1,25 @@
+# -means comment, 
+# we can use the file extension as .yaml or .yml
+# but .yaml is preferred
+# this file is used to define the syntax of Kubernetes resources
+
+# key values
+name: arun
+age: 30
+city: hyderabad
+
+# collection of data as set of key-value pairs
+# Dictionary
+
+trainer:
+  name: arun
+  age: 30
+  city: hyderabad
+
+# multiple values of key using a list
+# List
+Courses:
+  - python
+  - java
+  - javascript
+  - c++
