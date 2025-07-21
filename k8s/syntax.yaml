@@ -23,3 +23,11 @@ Courses:
   - java
   - javascript
   - c++
+
+# k8s objects representation
+# k8s yaml contains four top level fields
+
+apiversion:
+king:
+metadata:
+spec:
