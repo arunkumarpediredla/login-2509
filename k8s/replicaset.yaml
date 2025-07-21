@@ -1,4 +1,7 @@
-apiversion: apps/v1
+# This file is part of a Kubernetes configuration.
+# It defines a ReplicaSet resource in Kubernetes.
+# The ReplicaSet ensures that a specified number of pod replicas are running at any given time.
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: nginx
