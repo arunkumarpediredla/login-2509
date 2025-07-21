@@ -1,0 +1,12 @@
+# run nginx
+
+apiversion: v1
+kind: pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: nginx-containers
+      image: nginx
+      ports:
+      - containerPort: 80
