@@ -1,0 +1,12 @@
+# Run the service in Kubernetes
+apiVersion: v1
+kind: Service
+metadata:
+  name: -------------
+spec:
+  type: ---------------
+  selector:
+    app: -------------
+  ports:
+    - port: -------------
+      nodePort: -------------
