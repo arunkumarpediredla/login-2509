@@ -1,14 +1,14 @@
 # Generate nginx service
 apiVersion: v1
-kind: Service
+kind: {{.values.service.kind}}
 metadata:
-  name: nginx-service
+  name: {{.values.service.name}}
 spec:
-  type: NodePort
+  type: {{.values.service.type}}
   selector:
-      app: nginx
+      app: {{.values.deployment.appLabel}}
   ports:
       - protocol: TCP
-        port: 80
-        targetPort: 80
-        nodePort: 30007
+        port: {{.values.service.port}}
+        targetPort: {{.values.deployment.containerPort}}
+        nodePort: {{.values.service.nodePort}}
