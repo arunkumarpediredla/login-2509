@@ -1,11 +1,4 @@
 # generate a values file for nginx deployment
-service:
-  name: nginx-service
-  type: NodePort
-  appLabel: nginx-app
-  port: 80
-  nodePort: 30008
-
 deployment:
   name: nginx-deployment
   replicas: 1
@@ -13,3 +6,12 @@ deployment:
   containerName: nginx-container
   image: nginx:latest
   containerPort: 80
+
+
+service:
+  name: nginx-service
+  type: NodePort
+  appLabel: nginx-app
+  port: 80
+  nodePort: 30008
+
