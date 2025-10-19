@@ -1,6 +1,6 @@
 # Generate nginx service
 apiVersion: v1
-kind: {{.values.service.kind}}
+kind: Service
 metadata:
   name: {{.values.service.name}}
 spec:

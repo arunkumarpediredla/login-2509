@@ -1,6 +1,5 @@
 # generate a values file for nginx deployment
 service:
-  kind: Service
   name: nginx-service
   type: NodePort
   appLabel: nginx-app
