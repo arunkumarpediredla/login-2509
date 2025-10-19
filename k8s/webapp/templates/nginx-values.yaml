@@ -3,6 +3,7 @@ service:
   kind: Service
   name: nginx-service
   type: NodePort
+  appLabel: nginx-app
   port: 80
   nodePort: 30008
 

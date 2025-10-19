@@ -10,5 +10,5 @@ spec:
   ports:
       - protocol: TCP
         port: {{.values.service.port}}
-        targetPort: {{.values.deployment.containerPort}}
+        targetPort: {{.values.deployment.port}}
         nodePort: {{.values.service.nodePort}}
