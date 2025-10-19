@@ -1,4 +1,5 @@
 # generate a deployment with nginx pods
+{{- range $key, $app := .Values.applications }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,3 +19,4 @@ spec:
         image: {{ .Values.deployment.image }}
         ports:
         - containerPort: {{ .Values.deployment.containerPort }}
+{{- end }}
