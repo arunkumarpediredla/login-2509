@@ -7,12 +7,12 @@ metadata:
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
-    labels:
+    matchLabels:
       app: {{ .Values.deployment.appLabel }}
   template:
     metadata:
       labels:
-        app: {{ default "nginx-app" (index .Values "deployment" "appLabel") }}
+        app: {{ .Values.deployment.appLabel }}
     spec:
       containers:
       - name: {{ .Values.deployment.containerName }}
