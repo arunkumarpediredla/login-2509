@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Values.deployment.appLabel }}
+        app: {{ default "nginx-app" (index .Values "deployment" "appLabel") }}
     spec:
       containers:
       - name: {{ .Values.deployment.containerName }}
